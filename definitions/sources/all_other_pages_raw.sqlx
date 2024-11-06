@@ -4,3 +4,4 @@ config {
     schema: "xform__prod",
     name: "xform_reporting__raw_all_other_pages"
 }
+

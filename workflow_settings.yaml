@@ -1,5 +1,5 @@
 defaultProject: bsro-main
 defaultLocation: US
-defaultDataset: dataform
+defaultDataset: xform__prod
 defaultAssertionDataset: dataform_assertions
 dataformCoreVersion: 3.0.0
