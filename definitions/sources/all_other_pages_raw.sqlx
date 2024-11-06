@@ -1,6 +1,6 @@
 config {
-    type:"declaration",
-    database:"bsro-main",
-    schema:"xform__prod",
+    type: "declaration",
+    database: "bsro-main",
+    schema: "xform__prod",
     name: "xform_reporting__raw_all_other_pages"
 }

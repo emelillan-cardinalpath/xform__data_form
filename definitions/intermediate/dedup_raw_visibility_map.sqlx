@@ -1,19 +1,19 @@
 config {
     type: "table",
-      bigquery: {
-    partitionBy: "date"
-  }
+    bigquery: {
+        partitionBy: "date"
+    }
 }
 
 WITH
   raw_ranked AS (
   SELECT
     date(date) as date,
-    * EXCEPT( date),
+    * EXCEPT(date),
     RANK() OVER (PARTITION BY page, rsid, brand, channel_type, division, date ORDER BY etl_ts DESC) ranking
   FROM
     ${ref("xform_reporting__raw_visibility_map")}
-    )
+  )
 SELECT
   *
 FROM
